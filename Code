@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Community Outreach Proposal</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('https://i.ibb.co/XZC4q9SJ/bg-mariepink.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background: #003366;
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        header img {
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        header .title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+		footer {
+		text-align: center;
+		padding: 15px;
+		background: #003366;
+		color: white;
+		font-size: 0.9em;
+		width: 80%; 
+		max-width: 900px; 
+		margin: 40px auto; 
+		border-radius: 10px; 
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+		border: 3px solid white; 
+		position: relative; 
+		}
+
+
+        nav {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background-color: #003366;
+            height: 60px;
+            padding: 0 15px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #ffd166;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        section h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #000000;
+        }
+
+        .image-placeholder {
+            width: 50%;
+            max-width: 500px;
+            height: 350px;
+            margin: 20px auto;
+            background: #fff;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #aaa;
+            border-radius: 5px;
+        }
+
+		header img {
+		height: 200px; /* Starts big */
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(1.5); /* Center the logo */
+		animation: popUpToHeader 1.5s ease-out forwards;
+		}
+
+		@keyframes popUpToHeader {
+			0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+		}
+		
+		50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+		}
+			
+		100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        position: static; /* Returns to normal flow inside the header */
+        height: 80px; /* Original height */
+        margin-right: 15px;
+		}
+		
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #ffd166;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .members-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            border: 3px solid #003366;
+            border-radius: 15px;
+            background-color: #f0f8ff;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        .members-container h3 {
+            font-size: 1.5em;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .members-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .members-container li {
+            font-size: 1.2em;
+            padding: 10px;
+            border-bottom: 1px solid #003366;
+            color: #333;
+        }
+
+        .members-container li:last-child {
+            border-bottom: none;
+        }
+
+        .members-container li:hover {
+            background-color: #e6f2ff;
+            cursor: pointer;
+        }
+       
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #003366;
+        }
+   
+		.events {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .event-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .event-card {
+            border: 3px solid #003366;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            background-color: white;
+        }
+
+        .event-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            font-size: 14px;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/k3hKsXh/outreach-logo-removebg-preview.png" alt="Outreach Logo">
+        <div class="title">Outreach Program</div>
+        <nav>
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#about" onclick="showSection('about')">About Us</a>
+            <a href="#programs" onclick="showSection('programs')">Our Programs</a>
+            <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+            <a href="#get-involved" onclick="showSection('get-involved')">Get Involved</a>
+        </nav>
+    </header>
+
+  <style>
+    body {
+		background-color: #f4f4f4;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home {
+        text-align: center;
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+   
+    h1 {
+        font-size: 2.8em;
+        color: #0077cc;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-bottom: 4px solid #0077cc;
+        display: inline-block;
+        background: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+		background: rgba(255, 255, 255, 0.8);
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;        
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    h2 {
+		background: white;
+        font-size: 2.2em;
+        color: #005b99;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #0077cc;
+        display: inline-block;
+        padding-bottom: 5px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+    
+    .event-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 30px;
+    }
+    
+    .event-card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border: 2px solid #0077cc;
+    }
+
+    .event-card:hover {
+        transform: scale(1.08);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    h3 {
+        color: #004d80;
+        font-size: 1.6em;
+        margin-bottom: 12px;
+    }
+    
+    hr {
+        border: none;
+        height: 4px;
+        background: #0077cc;
+        width: 60%;
+        margin: 40px auto;
+        border-radius: 3px;
+    }
+    
+    @media (max-width: 768px) {
+        .event-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .event-card {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.3em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+    }
+</style>
+
+<section id="home" class="active">
+    <h1>Welcome to Our Community Outreach Project</h1>
+    <p>We are Group 4, dedicated to creating a positive impact in our community through various initiatives and programs. Join us as we aim to make a difference!</p>
+    <h2>Objectives</h2>
+    
+    <div class="event-cards">
+        <div class="event-card">
+            <h3>Bring Joy and Happiness</h3>
+            <p>Engage children in fun and interactive activities such as games and storytelling to create a memorable and enjoyable experience.</p>
+        </div>
+        <div class="event-card">
+            <h3>Build Social Connections</h3>
+            <p>Foster meaningful interactions by interviewing and listening to the kids, making them feel valued and heard.</p>
+        </div>
+        <div class="event-card">
+            <h3>Promote a Sense of Community</h3>
+            <p>Strengthen bonds by sharing meals with the children, encouraging kindness, and creating a supportive environment for them.</p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+   <section id="about" style="background-color: #e3f2fd; padding: 40px; border-radius: 15px; text-align: center; font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+    <h1 style="color: #0d47a1; font-size: 28px; margin-bottom: 15px;">About Us</h1>
+    <p style="color: #1565c0; font-size: 18px; line-height: 1.6; max-width: 800px; margin: auto;">
+        We are Group 4, also known as the Mariepink Team. Our team consists of six members, and our role is to serve and make a positive impact in our community.
+    </p>
+    <p style="color: #1565c0; font-size: 18px; line-height: 1.6; max-width: 800px; margin: auto;">
+        We serve to bring happiness to children through outreach programs. Our goal is to support and inspire them through community-driven initiatives.
+    </p>
+
+    <a href="https://ibb.co/LDXWHL8r">
+        <img src="https://i.ibb.co/vC6GR7Hh/MARIEPINK-4.png" alt="MARIEPINK-4" 
+            style="display: block; margin: 30px auto; max-width: 90%; border: 6px solid #0d47a1; border-radius: 20px; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);">
+    </a>
+
+    <h3 style="color: #0d47a1; font-size: 22px; margin-top: 20px;">Team Members:</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 700px; margin: auto;">
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Bacolor, Ashlie Rhon
+        </div>
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Blando, Juliana
+        </div>
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Cuaresma, Sigrid Sofia Agatha
+        </div>
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Diaz, Zhasnei Jhiane Nesh
+        </div>
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Mendoza, Kent Matthew
+        </div>
+        <div style="background: #bbdefb; padding: 15px; border-radius: 10px; border: 3px solid #0d47a1; width: 200px; text-align: center; color: #0d47a1; font-weight: bold;">
+            Santos, John Sebastian
+        </div>
+    </div>
+</section>
+
+
+    <section id="programs">
+        <h1>Our Programs</h1>
+        <p>We offer a variety of programs aimed at addressing key community issues. These include:</p>
+        <div class="event-cards">
+            <div class="event-card">
+                <h3>Fun and Interactive Games</h3>
+                <p>We organize exciting group games that encourage teamwork, creativity, and laughter, ensuring that every child has a great time.</p>
+            </div>
+            <div class="event-card">
+                <h3>Storytelling and Sharing</h3>
+                <p>Through interviews and storytelling, we listen to children's thoughts and experiences, making them feel heard and valued.</p>
+            </div>
+            <div class="event-card">
+                <h3>Community Meal and Bonding</h3>
+                <p>Conducting a community outreach activity to support the mission of street cleaners in maintaining cleanliness and safety. Use of sound systems, food, and games to uplift the morale of the beneficiaries.</p>
+            </div>
+            <div class="event-card">
+                <h3>Fostering Community Unity</h3>
+                <p>Encouraging teamwork among parents, students, barangay officials, and local businesses to ensure the project's success. The outreach program creates a meaningful opportunity to connect and strengthen relationships within the community.</p>
+            </div>
+        </div>
+        <h2>Activities on the Outreach Day</h2>
+            <p><strong>1.</strong>Giving tribute to the beneficiaries.</p>
+            <p><strong>2.</strong>Entertainment such as singing, dancing, and games.</p>
+            <p><strong>3.</strong>Distribution of gift kits and food.</p>
+            <p><strong>4.</strong>Showing heartfelt support from the community.</p>
+            <h2>Core Values in the Program:</h2>
+                  <div class="event-cards">
+            <div class="event-card">
+                <h3>Acknowledging</h3>
+                <p>the contribution of street cleaners.</p>
+            </div>
+            <div class="event-card">
+                <h3>Providing support</h3>
+                <p>for their work and safety.</p>
+            </div>
+            <div class="event-card">
+                <h3>Building connections</h3>
+                <p>among various community sectors.</p>
+            </div>
+        </div>
+        <h3>Target Beneficiaries:</h3>
+        <p>Children in the community who will benefit from support, encouragement, and joyful experiences through engaging activities and meaningful interactions.</p>
+   </section>
+
+
+<section id="contact">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, suggestions, or would like to get involved, feel free to reach out to us:</p>
+    <p>Email: <a href="mailto:mariethe6th@gmail.com">mariethe6th@gmail.com</a></p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: #112 Ipil Street, Marikina Heights, Marikina City, Metro Manila</p>
+</section><section id="get-involved">
+    <h1>Get Involved</h1>
+    <p>Your support makes a difference! You can help us in many ways:</p>
+    <ul>
+        <p><strong>Donate:</strong> Financial contributions to help fund our initiatives.</p>
+        <p><strong>Volunteer:</strong> Join our team to actively participate in events.</p>
+        <p><strong>Spread Awareness:</strong> Share our mission and goals with others.</p>
+    </ul>
+    <p>To donate, please fill out the form below:</p><form class="donation-form">
+    <input type="number" placeholder="Enter donation amount" required>
+    <button type="submit">Donate Now</button>
+</form>
+
+</section><footer>
+    <p>&copy; 2024 Community Outreach Team Group 4. All rights reserved.</p>
+</footer><script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script></body>
+</html>
